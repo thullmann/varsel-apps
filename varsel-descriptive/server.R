@@ -203,9 +203,5 @@ shinyServer(function(input, output, session){
   
   
   
-  # Open external links in system browser — prevents tab reset on link click
-  observeEvent(input$external_link, {
-    browseURL(input$external_link)
-  })
   
 })

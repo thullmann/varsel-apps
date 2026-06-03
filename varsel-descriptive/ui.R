@@ -103,18 +103,7 @@ navbarPage(
         margin-bottom: 3px;
       }
     "))
-    ),
-    tags$script(HTML("
-      // Intercept external link clicks and open via browseURL() on the server —
-      // prevents Shiny from resetting the active tab.
-      $(document).on('click', 'a[href^=\"http\"]', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        Shiny.setInputValue('external_link', $(this).attr('href'),
-                            {priority: 'event'});
-        return false;
-      });
-    "))
+    )
   ),
   
   # ── Tab 1: Simulation results ──────────────────────────────────────────────

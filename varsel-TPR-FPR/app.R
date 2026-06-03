@@ -520,17 +520,6 @@ ui <- navbarPage(
       }
     ")),
     tags$script(HTML("
-      // Send external link clicks to Shiny server, which opens them via
-      // browseURL() — bypasses RStudio viewer entirely.
-      $(document).on('click', 'a[href^=\"http\"]', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        Shiny.setInputValue('external_link', $(this).attr('href'),
-                            {priority: 'event'});
-        return false;
-      });
-    ")),
-    tags$script(HTML("
       function applyLayout() {
         var W    = window.innerWidth;
         var navH = $('.navbar').outerHeight(true) || 50;
@@ -1061,11 +1050,6 @@ ui <- navbarPage(
 
 server <- function(input, output, session) {
   
-  # Open external links in system browser via browseURL() —
-  # avoids RStudio viewer pane that window.open() triggers.
-  observeEvent(input$external_link, {
-    browseURL(input$external_link)
-  }, ignoreNULL = TRUE, ignoreInit = TRUE)
   
   # Shared helper: annotation scaling based on window height
   get_ann_params <- function() {
@@ -1231,6 +1215,6 @@ server <- function(input, output, session) {
 # Make the local 'figure/' subfolder accessible to the browser.
 # Shiny only serves files from 'www/' by default; this maps the URL path
 # '/figure/' to the local 'figure/' directory next to the app file.
-addResourcePath("figure", "figure")
+#addResourcePath("figure", "figure")
 
 shinyApp(ui = ui, server = server)

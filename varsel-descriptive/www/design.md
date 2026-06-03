@@ -1,6 +1,6 @@
 # Simulation design
 
-Here we briefly describe our simulation design. More details can be found in the manuscript and the [study protocol](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0308543).
+Here we briefly describe our simulation design. More details can be found in the manuscript and the <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0308543" target="_blank">study protocol</a>.
 
 ## Aim
 
