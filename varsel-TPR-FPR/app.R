@@ -1022,7 +1022,7 @@ ui <- navbarPage(
                'This app is implemented in the R Shiny web application framework and is deployed through
                RStudio\'s webservice <a href="https://www.shinyapps.io/">shinyapps.io</a>.
                The code is available in the accompanying
-               <a href="https://github.com/biometrician/VariableSelection/">Github</a> repository.'
+               <a href="https://github.com/thullmann/varsel-apps/">Github</a> repository.'
              )),
              
              tags$h3("Reference"),
