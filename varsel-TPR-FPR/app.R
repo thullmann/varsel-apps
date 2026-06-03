@@ -1215,6 +1215,6 @@ server <- function(input, output, session) {
 # Make the local 'figure/' subfolder accessible to the browser.
 # Shiny only serves files from 'www/' by default; this maps the URL path
 # '/figure/' to the local 'figure/' directory next to the app file.
-#addResourcePath("figure", "figure")
+addResourcePath("figure", "figure")
 
 shinyApp(ui = ui, server = server)
