@@ -4,7 +4,7 @@ library(markdown)
 
 # Helper: sidebar section heading with a left border accent
 sh <- function(label) tagList(
-  tags$h4(label, style = "font-size:15px; font-weight:bold; margin-top:14px;
+  tags$h4(label, style = "font-size:16px; font-weight:bold; margin-top:14px;
                            margin-bottom:0; padding-left:8px;
                            border-left:3px solid #aaa;"),
   tags$div(style = "height:10px; line-height:10px; font-size:1px; overflow:hidden;", HTML("&nbsp;"))
@@ -16,10 +16,11 @@ navbarPage(
     withMathJax(),
     tags$head(
       tags$style(HTML("
+      body               { font-size: 15px; }
       .form-group        { margin-bottom: 8px; }
-      label              { font-size: 13px; margin-bottom: 2px; }
+      label              { font-size: 14px; margin-bottom: 2px; }
       .radio label,
-      .checkbox label    { font-size: 13px; }
+      .checkbox label    { font-size: 14px; }
       .well              { padding: 12px; }
       #do, #downloadPlot { width: 100%; }
       h4 + .form-group,
@@ -28,7 +29,7 @@ navbarPage(
         max-width: 900px;
         margin: 0 auto;
         padding: 10px 20px 30px 20px;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.6;
       }
       .simdesign-content h1 {

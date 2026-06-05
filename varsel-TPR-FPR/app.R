@@ -446,9 +446,10 @@ ui <- navbarPage(
       .irs--shiny .irs-bar, .irs--shiny .irs-line { height: 4px; }
       .irs--shiny .irs-handle { width: 16px; height: 16px; top: 22px; }
       .form-group { margin-bottom: 8px; }
-      label { font-size: 12px; margin-bottom: 1px; }
+      body  { font-size: 15px; }
+      label { font-size: 13px; margin-bottom: 1px; }
       /* Keep sidebar group headers on one line */
-      .well h4 { font-size: 13px; line-height: 1.3; white-space: nowrap; }
+      .well h4 { font-size: 14px; line-height: 1.3; white-space: nowrap; }
       /* Wide plot + all narrow single-scenario/group plots */
       #tilePlot, [id^='tilePlot_'] { width: 100%; }
       .intro-box {
