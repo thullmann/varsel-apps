@@ -1028,12 +1028,12 @@ ui <- navbarPage(
              
              tags$h3("Reference"),
              
-             tags$p(
-               "Ullmann, T., Heinze, G., Kammer, M., Dunkler, D. for TG2 of the STRATOS initiative (2026). ",
-               "A preregistered simulation study provided evidence on the appropriate use of data-driven variable selection in descriptive multivariable regression modeling. ",
-               tags$em("Currently under review")
-             ),
-             
+             tags$p(HTML(
+               'Ullmann, T., Heinze, G., Kammer, M., Dunkler, D. for TG2 of the STRATOS initiative (2026).
+               A preregistered simulation study provided evidence on the appropriate use of data-driven variable selection in descriptive multivariable regression modeling.
+               <em>Journal of Clinical Epidemiology</em>, 
+               <a href="https://doi.org/10.1016/j.jclinepi.2026.112423">112423</a>.'
+             )),
              tags$p(HTML(
                'Ullmann, T., Heinze, G., Hafermann, L., Schilhart-Wallisch, C., Dunkler, D. for TG2 of the STRATOS initiative (2024).
                Evaluating variable selection methods for multivariable regression models: A simulation study protocol.
